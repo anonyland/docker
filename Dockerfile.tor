@@ -17,7 +17,7 @@ RUN apt-get update && \
         deb.torproject.org-keyring \
         tor
 
-RUN echo "HiddenServiceDir /var/lib/tor/benjamintoll.com" > /etc/tor/torrc
+RUN echo "HiddenServiceDir /var/lib/tor/site > /etc/tor/torrc
 RUN echo "HiddenServicePort 80 onion:80" >> /etc/tor/torrc
 
 ENTRYPOINT ["tor"]
